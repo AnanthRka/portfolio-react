@@ -18,7 +18,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
-    --transition: all 400ms ease:
+    --transition: all 400ms ease;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -45,6 +45,7 @@ body {
 /* ==========   General Styles  ========== */
 
 .container {
+    /* width: var(--container-width-lg); */
     width: var(--container-width-lg);
     margin: 0 auto;
 }
@@ -85,7 +86,7 @@ a:hover{
     color: var(--color-white);
 }
 
-.btb {
+.btn {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
