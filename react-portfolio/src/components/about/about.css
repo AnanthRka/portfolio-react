@@ -5,16 +5,19 @@
 }
 
 .about__me {
-    width: 100%;
+    width: 18rem;
+    height: 24rem;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
+    border-radius: 3rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    width: 18rem;
+    height: 27rem;
+    border-radius: 3rem;
     overflow: hidden;
     transform: rotate(13deg);
     transition: var(--transition);
@@ -85,20 +88,25 @@ a.about__card:hover {
 /* ============     Media Queries (Small Devices)      =========*/
 @media screen  and (max-width: 600px) {
     .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
+        width: 60%;
+        margin-left: 2.8rem;
+        place-items: center;
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr;
+        margin-left: 0.5rem;
+        margin-right: 4rem;
         gap: 1rem;
     }
 
-    .about__content {
-        text-align: center;
-    }
-
     .about__content p{
+        text-align: center;
         margin: 1.5rem 0;
+        margin-left: 3%;
+        width: 80%;
+    }
+    .about__content a {
+        margin-left: 28%;
     }
 }

@@ -42,16 +42,14 @@ header {
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
+    width: 20rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 5rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem;
 }
-
 /* =========== Scroll Down ======== */
 .scroll__down {
     position: absolute;
@@ -65,7 +63,7 @@ header {
 /* ============     Media Queries (Medium Devices)      =========*/
 @media screen  and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 90vh;
     }
 }
 
@@ -76,5 +74,8 @@ header {
     }
     .header__socials, .scroll__down {
         display: none;
+    }
+    .me{
+        left: 7%;
     }
 }
